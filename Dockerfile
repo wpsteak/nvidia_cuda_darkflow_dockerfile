@@ -10,7 +10,8 @@ WORKDIR /darkflow
 
 RUN pip3 install Cython
 RUN pip3 install numpy
-RUN pip3 install tensorflow
+# RUN pip3 install tensorflow
+RUN pip3 install tensorflow-gpu
 RUN pip3 install opencv-python
 RUN pip3 install .
 RUN python3.6 setup.py build_ext --inplac
